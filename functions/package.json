@@ -1,0 +1,32 @@
+{
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "start": "npx @google-cloud/functions-framework --target=authenticate",
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "common-js": "^0.3.8",
+    "cors": "^2.8.5",
+    "dayjs": "^1.11.5",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.24.1",
+    "nodemailer": "^6.8.0",
+    "xlsx": "file:vendor/xlsx-0.18.12.tgz"
+  },
+  "devDependencies": {
+    "@google-cloud/functions-framework": "^3.1.2",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
